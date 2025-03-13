@@ -1,0 +1,154 @@
+/* Variables Declaration */
+:root {
+	/* Main Colors */
+	--accent-color: #a600ff;
+	--primary-color: white;
+	--secondary-color: black;
+	/* Other Colors */
+	--body-background-color: #e1e1e1;
+	/* Fonts */
+	--primary-font: "Montserrat";
+	/* Big-Section Variables */
+	--big-section-border-radius: 0.5rem;
+	--big-section-height: 80vh;
+	--big-section-margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+/* Elements Styling Section */
+*, *::after, *::before {
+	box-sizing: border-box;
+	font-family: var(--primary-font), sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--body-background-color);
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+section {
+	scroll-margin-top: 5rem; /* TODO - When scrolling up (from FAQ to Home) this is not applied. */
+}
+
+span {
+	color: var(--accent-color);
+}
+
+/* General Styling */
+.big-section {
+	background: var(--primary-color);
+	border-radius: var(--big-section-border-radius);
+	height: var(--big-section-height);
+	margin: var(--big-section-margin);
+}
+
+/* Header Styling */
+.header {
+	align-items: center;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+	display: flex;
+	height: 8vh;
+	justify-content: space-between;
+	padding: 0 1.5rem;
+	position: sticky;
+	top: 0;
+	transition: all 300ms ease-in-out;
+	z-index: 9999;
+}
+
+.scroll-down header {
+	transform: translate3d(0, -100%, 0);
+}
+
+/* Header Logo Styling */
+.header__logo {
+	cursor: default;
+	text-align: center;
+	width: 12.5rem;
+}
+
+/* Header Navigation Styling */
+.header__navigation li {
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 0 3rem;
+}
+
+.header__navigation li a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+.header__navigation li a:hover {
+	color: var(--accent-color);
+	transition: 0.3s;
+}
+
+/* Header Buttons Styling */
+.header__buttons {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	width: 12.5rem;
+}
+
+.header__button {
+	border-radius: 0.5rem;
+	color: var(--primary-color);
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	height: 2.5rem;
+	width: 5.625rem;
+}
+
+.header__button--sign-in {
+	background: none;
+	border: 2px solid var(--accent-color);
+}
+
+.header__button--sign-up {
+	background: var(--accent-color);
+	border: none;
+}
+
+/* Home Section Styling */
+.home-section {
+	margin-top: 1.5rem;
+}
+
+/* Marquee Section Styling */
+.marquee-section {
+	height: 8vh;
+}
+
+/* Products Section Styling */
+.products-section {
+
+}
+
+/* Plans Section Styling */
+.plans-section {
+
+}
+
+/* FAQ Section Styling */
+.faq-section {
+
+}
+
+/* Footer Styling */
+.footer {
+	background: var(--secondary-color);
+	height: 60vh;
+}
