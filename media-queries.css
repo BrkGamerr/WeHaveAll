@@ -1,0 +1,30 @@
+/* Responsive Header and Sidebar Menu */
+@media (max-width: 1379px) {
+	header li:nth-child(5) {
+		display: none;
+	}
+}
+
+@media (max-width: 1179px) {
+	header li:nth-child(3) {
+		display: none;
+	}
+}
+
+@media (max-width: 979px) {
+	header nav {
+		display: none;
+	}
+	.header__buttons-container {
+		display: none;
+	}
+	.sidebar-menu__icon {
+		display: block;
+	}
+}
+
+@media (max-width: 499px) {
+	.sidebar-menu {
+		width: 100%;
+	}
+}
