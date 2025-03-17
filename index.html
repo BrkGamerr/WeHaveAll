@@ -9,12 +9,13 @@
 	<link rel="stylesheet"
 	      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media-queries.css">
 	<script src="script.js" defer></script>
 </head>
 <body>
 	<header class="header">
 		<h2 class="header__logo">WeHave<span>All</span></h2>
-		<nav class="header__navigation">
+		<nav>
 			<ul>
 				<li><a href="#featuresSection">Features</a></li>
 				<li><a href="#pricingSection">Plans</a></li>
@@ -23,17 +24,30 @@
 				<li><a href="#faqSection">FAQ</a></li>
 			</ul>
 		</nav>
-		<div class="header__buttons">
-			<button type="button" class="button header__button">Sign In</button>
-			<button type="button" class="button header__button header__button--sign-up">Sign Up</button>
+		<div class="header__buttons-container">
+			<button type="button" class="header__account-button">Sign In</button>
+			<button type="button" class="header__account-button account-button__sign-up">Sign Up</button>
 		</div>
+		<svg id="sidebarMenuIcon" class="sidebar-menu__icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
 	</header>
+	<div id="sidebarMenu" class="sidebar-menu">
+		<div class="sidebar-menu__buttons-container">
+			<button type="button" class="sidebar-menu__account-button">Sign In</button>
+			<button type="button" class="sidebar-menu__account-button account-button__sign-up">Sign Up</button>
+		</div>
+		<button type="button" id="sidebarMenuFeaturesButton" class="sidebar-menu__button">Features</button>
+		<button type="button" id="sidebarMenuPlansButton" class="sidebar-menu__button">Plans</button>
+		<button type="button" id="sidebarMenuReviewsButton" class="sidebar-menu__button">Reviews</button>
+		<button type="button" id="sidebarMenuContactButton" class="sidebar-menu__button">Contact</button>
+		<button type="button" id="sidebarMenuFAQButton" class="sidebar-menu__button">FAQ</button>
+		<button type="button" id="sidebarMenuClosingButton" class="sidebar-menu__closing-button">&#10006;</button>
+	</div>
 	<main>
 		<section class="section home-section">
 			<div class="home-section__content">
 				<h1 class="home-section__title">No competition,<br><span>Unlimited fun</span></h1>
 				<p class="home-section__description">We don't care where you live. One library. Same for everyone.</p>
-				<button type="button" class="button home-section__button">Get Started</button>
+				<button type="button" class="home-section__button">Get Started</button>
 			</div>
 		</section>
 		<section class="section statistics-section">
@@ -42,9 +56,9 @@
 				<p>Take a look at some of our achievements.<br>From number of users, to number of movies and TV shows.</p>
 			</div>
 			<div class="section__content">
-				<div class="section__card section__card--medium"></div>
-				<div class="section__card section__card--medium"></div>
-				<div class="section__card section__card--medium"></div>
+				<div class="section__card section__card--large"></div>
+				<div class="section__card section__card--large"></div>
+				<div class="section__card section__card--large"></div>
 			</div>
 		</section>
 		<section id="featuresSection" class="section features-section">
@@ -63,9 +77,10 @@
 				<p>Plans that suit your needs and budget.<br>Change, cancel and continue anytime you want.</p>
 			</div>
 			<div class="section__content">
-				<div class="section__card section__card--large"></div>
-				<div class="section__card section__card--large"></div>
-				<div class="section__card section__card--large"></div>
+				<div class="section__card section__card--extra-large"></div>
+				<div class="section__card section__card--extra-large"></div>
+				<div class="section__card section__card--extra-large"></div>
+				<div class="section__card section__card--extra-large"></div>
 			</div>
 		</section>
 	</main>
@@ -85,7 +100,10 @@
 			<div class="section__card section__card--small"></div>
 		</div>
 	</section>
-	<section class="section newsletter-section"></section>
+	<section class="section newsletter-section">
+		<div class="newsletter-section__image"></div>
+		<div class="newsletter-section__content"></div>
+	</section>
 	<section id="contactSection" class="section contact-section"></section>
 	<section id="faqSection" class="section faq-section">
 		<div class="section__title">
