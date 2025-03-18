@@ -8,19 +8,22 @@
 	--secondary-color: black;
 	/* Other Colors */
 	--body-bg-color: #e1e1e1;
-	--section__card--border-color: #ebebeb;
+	--section__card--border-color: #ebebeb;  /* TESTING-ONLY, DELETE AFTER */
 }
 
-/* Elements Styling */
+/* General Styling */
+* {
+	/* Transitions */
+	transition: all 300ms ease-in-out;
+	/* Typography */
+	font-family: var(--primary-font), sans-serif;
+}
+
 *, *::after, *::before {
+	/* Box Model */
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-
-* {
-	font-family: var(--primary-font), sans-serif;
-	transition: all 300ms ease-in-out;
 }
 
 html {
@@ -61,6 +64,29 @@ button:hover {
 	color: var(--accent-color);
 }
 
+footer {
+	/* Box Model */
+	height: 60vh;
+	/* Visual Styles */
+	background: var(--secondary-color);
+}
+
+header {
+	/* Box Model */
+	height: 8vh;
+	padding: 0 1.5rem;
+	/* Layout */
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	/* Positioning */
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	/* Visual Styles */
+	background: var(--secondary-color);
+}
+
 li {
 	/* Box Model */
 	padding: 0 3rem;
@@ -71,7 +97,19 @@ li {
 }
 
 section {
+	/* Behavior */
 	scroll-margin-top: 5rem; /* TODO - When scrolling up (from FAQ to Home) this is not applied. */
+	/* Box Model */
+	border-radius: 0.5rem;
+	margin: 1.25rem 1.25rem;
+	min-height: 88vh;
+	padding: 2rem;
+	/* Layout */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* Visual Styles */
+	background: var(--primary-color);
 }
 
 span {
@@ -90,92 +128,7 @@ span {
 	background: var(--accent-color);
 }
 
-/* Sections Styling */
-.section {
-	/* Box Model */
-	border-radius: 0.5rem;
-	margin: 1.25rem 1.25rem;
-	min-height: 88vh;
-	padding: 0 1rem;
-	/* Layout */
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	/* Visual Styles */
-	background: var(--primary-color);
-}
-
-.section__title {
-	/* Box Model */
-	padding: 2rem 0;
-	/* Layout */
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	/* Typography */
-	text-align: center;
-}
-
-.section__title h2 {
-	color: var(--accent-color);
-	font-size: 3rem;
-}
-
-.section__title p {
-	font-size: 1.2rem;
-}
-
-.section__content {
-	/* Box Model */
-	margin: auto 0;
-	padding: 2rem 0;
-	/* Layout */
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
-	justify-content: center;
-}
-
-.section__card {
-	border: 3px solid var(--section__card--border-color);
-	border-radius: 0.5rem;
-	width: 25rem;
-}
-
-.section__card--small {
-	height: 14rem;
-}
-
-.section__card--medium {
-	height: 18rem;
-}
-
-.section__card--large {
-	height: 25rem;
-	width: 30rem;
-}
-
-.section__card--extra-large {
-	height: 40rem;
-}
-
 /* Header Styling */
-.header {
-	/* Box Model */
-	height: 8vh;
-	padding: 0 1.5rem;
-	/* Layout */
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
-	/* Positioning */
-	position: sticky;
-	top: 0;
-	z-index: 9999;
-	/* Visual Styles */
-	background: var(--secondary-color);
-}
-
 .scroll-down header {
 	transform: translate3d(0, -100%, 0);
 }
@@ -205,11 +158,6 @@ span {
 	font-size: 1rem;
 }
 
-/* Sidebar Menu Icon */
-.sidebar-menu__icon {
-	display: none;
-}
-
 /* Sidebar Menu Styling */
 .sidebar-menu {
 	/* Box Model */
@@ -227,6 +175,10 @@ span {
 	/* Visual Styles */
 	background: var(--secondary-color);
 	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-menu__icon {
+	display: none;
 }
 
 .sidebar-menu__buttons-container {
@@ -259,6 +211,69 @@ span {
 	height: 17rem;
 	/* Typography */
 	font-size: 3rem;
+}
+
+/* Sections Styling */
+.section__title {
+	/* Box Model */
+	padding-bottom: 4rem;
+	/* Layout */
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	/* Typography */
+	text-align: center;
+}
+
+.section__title h2 {
+	color: var(--accent-color);
+	font-size: 3rem;
+}
+
+.section__title p {
+	font-size: 1.2rem;
+}
+
+.section__content {
+	/* Box Model */
+	margin: auto 0;
+	/* Layout */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.section__card {
+	border: 3px solid var(--section__card--border-color);
+	border-radius: 0.5rem;
+	width: 25rem;
+}
+
+.section__card--statistic {
+	height: 25rem;
+	width: 30rem;
+}
+
+.section__card--feature {
+	height: 18rem;
+}
+
+.section__card--price {
+	height: 40rem;
+}
+
+.section__card--review {
+	height: 14rem;
+}
+
+.section__card--content {
+	/* Box Model */
+	border: 3px solid var(--section__card--border-color);
+	border-radius: 0.5rem;
+	height: 35rem;
+	margin: 0 auto;
+	width: 35rem;
 }
 
 /* Home Section Styling */
@@ -301,10 +316,23 @@ span {
 	color: var(--primary-color);
 }
 
-/* Footer Styling */
-.footer {
+/* Newsletter and Contact Section Styling */
+.newsletter-section, .contact-section {
 	/* Box Model */
-	height: 60vh;
-	/* Visual Styles */
-	background: var(--secondary-color);
+	padding: 2rem;
+	/* Layout */
+	align-items: center;
+	flex-direction: row;
+	gap: 2rem;
+	justify-content: center;
+}
+
+/* Newsletter Section Styling */
+.newsletter-section {
+	flex-wrap: wrap;
+}
+
+/* Contact Section Styling */
+.contact-section {
+	flex-wrap: wrap-reverse;
 }
