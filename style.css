@@ -60,7 +60,7 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+button:hover:not(.home-section__button) {
 	color: var(--accent-color);
 }
 
@@ -128,7 +128,7 @@ span {
 
 .account-button__sign-up:hover {
 	/* Typography */
-	color: var(--primary-color);
+	color: var(--primary-color) !important;
 	/* Visual Styles */
 	background: var(--accent-color);
 }
@@ -151,7 +151,7 @@ span {
 }
 
 .section__title p {
-	font-size: 1.2rem;
+	font-size: 1.25rem;
 }
 
 .section__content {
@@ -167,35 +167,16 @@ span {
 /* Cards */
 .section__card {
 	/* Box Model */
-	border: 3px solid var(--section-card-border);
+	border: 3px solid var(--section-card-border); /* TESTING-ONLY, DELETE AFTER */
 	border-radius: 0.5rem;
 	width: 25rem;
-}
-
-.content__card {
-	/* Box Model */
-	border: 3px solid var(--section-card-border);
-	border-radius: 0.5rem;
-	height: 35rem;
-	margin: 0 auto;
-	width: 35rem;
-}
-
-.statistics__card {
-	height: 25rem;
-	width: 30rem;
-}
-
-.features__card {
-	height: 18rem;
-}
-
-.pricing__card {
-	height: 40rem;
-}
-
-.reviews__card {
-	height: 14rem;
+	/* Layout */
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* Typography */
+	text-align: center;
 }
 
 /* Header */
@@ -309,33 +290,107 @@ span {
 
 .home-section__button {
 	/* Box Model */
+	border-radius: 2rem;
 	height: 3rem;
 	width: 8rem;
 	/* Visual Styles */
 	background: var(--accent-color);
 }
 
-.home-section__button:hover {
-	color: var(--primary-color);
+/* Statistics Section */
+.statistics__card {
+	/* Box Model */
+	height: 25rem;
+	width: 30rem;
+	/* Layout */
+	gap: 2rem;
 }
 
-/* Newsletter and Contact Section */
-.newsletter-section, .contact-section {
+.statistics__card h3 {
+	font-size: 3rem;
+}
+
+/* Features Section */
+.features__card {
+	/* Box Model */
+	height: 18rem;
+	/* Layout */
+	gap: 1rem;
+}
+
+.features__card h3 {
+	font-size: 2.25rem;
+}
+
+/* Pricing Section */
+.pricing__card {
+	height: 40rem;
+}
+
+/* Reviews Section */
+.reviews__card {
+	/* Box Model */
+	border: 1px solid lightgray;
+	border-radius: 2.5rem;
+	height: 16rem;
+	padding: 1.5rem;
+	/* Layout */
+	align-items: flex-start;
+	gap: 1rem;
+	justify-content: flex-start;
+}
+
+.reviews__user {
+	display: flex;
+}
+
+.reviews__user img {
+	/* Box Model */
+	border-radius: 50%;
+	height: 44px;
+	width: 44px;
+}
+
+.reviews__title {
+	/* Box Model */
+	padding-left: 1rem;
+	/* Layout */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* Typography */
+	text-align: left;
+}
+
+.reviews__title p {
+	color: gray;
+}
+
+.reviews__comment {
+	text-align: left;
+}
+
+/* Contact Section */
+.contact-section {
 	/* Box Model */
 	padding: 2rem;
 	/* Layout */
 	align-items: center;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 2rem;
 	justify-content: center;
 }
 
-/* Newsletter Section */
-.newsletter-section {
-	flex-wrap: wrap;
+.contact__card {
+	/* Box Model */
+	border: 3px solid var(--section-card-border); /* TESTING-ONLY, DELETE AFTER */
+	border-radius: 0.5rem;
+	height: 35rem;
+	margin: 0 auto;
+	width: 45rem;
 }
 
-/* Contact Section */
-.contact-section {
-	flex-wrap: wrap-reverse;
-}
+/* FAQ Section */
+
+/* Footer Section */
