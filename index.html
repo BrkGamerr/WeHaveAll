@@ -241,23 +241,40 @@
 		</div>
 	</section>
 	<section id="contactSection" class="contact-section">
-		<div class="contact__card contact__info"></div>
-		<form class="contact__card contact__form">
-			<div class="form__info">
-				<div class="form__name">
+		<div class="contact__card contact-info">
+			<h2>Talk to us easily</h2>
+			<p>We're committed to delivering the support you require to make your experience as smooth as possible.</p>
+			<div class="contact-info__container">
+				<div class="contact-info__content">
+					<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#a600ff"><path d="M120-120v-556.67h163.33V-840h393.34v326.67H840V-120H528.67v-163.33h-97.34V-120H120Zm66.67-66.67h96.66v-96.66h-96.66v96.66Zm0-163.33h96.66v-96.67h-96.66V-350Zm0-163.33h96.66V-610h-96.66v96.67ZM350-350h96.67v-96.67H350V-350Zm0-163.33h96.67V-610H350v96.67Zm0-163.34h96.67v-96.66H350v96.66ZM513.33-350H610v-96.67h-96.67V-350Zm0-163.33H610V-610h-96.67v96.67Zm0-163.34H610v-96.66h-96.67v96.66Zm163.34 490h96.66v-96.66h-96.66v96.66Zm0-163.33h96.66v-96.67h-96.66V-350Z"/></svg>
+					<p>123 Maple Street, Springfield, IL, USA</p>
+				</div>
+				<div class="contact-info__content">
+					<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#a600ff"><path d="M796-120q-119 0-240-55.5T333-333Q231-435 175.5-556T120-796q0-18.86 12.57-31.43T164-840h147.33q14 0 24.34 9.83Q346-820.33 349.33-806l26.62 130.43q2.05 14.9-.62 26.24-2.66 11.33-10.82 19.48L265.67-530q24 41.67 52.5 78.5T381-381.33q35 35.66 73.67 65.5Q493.33-286 536-262.67l94.67-96.66q9.66-10.34 23.26-14.5 13.61-4.17 26.74-2.17L806-349.33q14.67 4 24.33 15.53Q840-322.27 840-308v144q0 18.86-12.57 31.43T796-120ZM233-592l76-76.67-21-104.66H187q3 41.66 13.67 86Q211.33-643 233-592Zm365.33 361.33q40.34 18.34 85.84 29.67 45.5 11.33 89.16 13.67V-288l-100-20.33-75 77.66ZM233-592Zm365.33 361.33Z"/></svg>
+					<p>+1 (650) 555-0198</p>
+				</div>
+				<div class="contact-info__content">
+					<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#a600ff"><path d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67ZM480-454.67 146.67-670v443.33h666.66V-670L480-454.67Zm0-66.66 330.67-212H150l330 212ZM146.67-670v-63.33V-226.67-670Z"/></svg>
+					<p>support@wehaveall.com</p>
+				</div>
+			</div>
+		</div>
+		<form class="contact__card contact-form">
+			<div class="form-user-info">
+				<div class="form-user-info__name">
 					<label for="nameInput">Name</label>
-					<input type="text" id="nameInput" name="name" placeholder="Your name">
+					<input type="text" name="name" id="nameInput" placeholder="Your name">
 				</div>
-				<div class="form__email">
+				<div class="form-user-info__email">
 					<label for="emailInput">Email</label>
-					<input type="email" id="emailInput" name="email" placeholder="Your email">
+					<input type="email" name="email" id="emailInput" placeholder="Your email" required>
 				</div>
 			</div>
-			<div class="form__message">
-				<label for="formTextarea">Message</label>
-				<textarea id="formTextarea" rows="4" cols="50" placeholder="Write your message..."></textarea>
+			<div class="form-user-message">
+				<label for="messageInput">Message</label>
+				<textarea name="message" id="messageInput" placeholder="Your message"></textarea>
 			</div>
-			<button type="submit" class="form__button">Submit</button>
+			<button type="submit" class="form-button">Submit</button>
 		</form>
 	</section>
 	<section id="faqSection" class="faq-section">
