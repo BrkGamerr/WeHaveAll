@@ -88,7 +88,7 @@ header {
 	background: var(--secondary-color);
 }
 
-input {
+input, textarea {
 	/* Box Model */
 	border: 1px solid var(--border-color);
 	border-radius: 0.5rem;
@@ -99,7 +99,9 @@ input {
 	background: var(--input-color);
 }
 
-input:focus {
+input:focus, textarea:focus {
+	/* Box Model */
+	border: 1px solid var(--accent-color);
 	/* Transitions */
 	transition: none;
 	/* Visual Styles */
@@ -107,7 +109,9 @@ input:focus {
 }
 
 label {
+	/* Box Model */
 	display: block;
+	padding-bottom: 0.5rem;
 }
 
 li {
@@ -141,9 +145,12 @@ span {
 
 textarea {
 	/* Box Model */
-	border: 1px solid var(--border-color);
-	border-radius: 0.5rem;
-	padding: 0.5rem;
+	height: 8rem;
+	resize: none;
+}
+
+textarea::-webkit-scrollbar {
+	display: none;
 }
 
 /* Animations */
@@ -413,28 +420,74 @@ textarea {
 
 .contact__card {
 	/* Box Model */
-	height: 35rem;
+	height: 25rem;
 	margin: 0 auto;
 	width: 35rem;
 }
 
-.contact__form {
+.contact-info {
+	/* Layout */
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-info h2 {
+	/* Typography */
+	color: var(--accent-color);
+	font-size: 3rem;
+}
+
+.contact-info > p {
+	/* Box Model */
+	padding-top: 0.5rem;
+	/* Typography */
+	font-size: 1.25rem;
+}
+
+.contact-info__container {
+	/* Box Model */
+	margin: auto 0;
+	/* Layout */
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info__content {
+	/* Layout */
+	align-items: center;
+	display: flex;
+	gap: 1rem;
+}
+
+.contact-form {
 	/* Box Model */
 	border: 1px solid var(--border-color);
 	border-radius: 0.5rem;
 	padding: 2rem;
 	/* Layout */
-	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.form__info {
+.form-user-info {
 	/* Layout */
 	display: flex;
+	gap: 1rem;
 	justify-content: center;
-	gap: 2rem;
+}
+
+.form-user-info__name, .form-user-info__email {
+	width: 50%;
+}
+
+.form-button {
+	/* Box Model */
+	border: 2px solid var(--accent-color);
+	height: 3rem;
+	/* Typography */
+	color: var(--secondary-color);
 }
 
 /* FAQ Section */
