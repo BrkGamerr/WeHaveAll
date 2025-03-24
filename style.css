@@ -143,6 +143,14 @@ span {
 	color: var(--accent-color);
 }
 
+sub {
+	/* Layout */
+	vertical-align: 0;
+	/* Typography */
+	font-size: 1rem;
+	font-weight: normal;
+}
+
 textarea {
 	/* Box Model */
 	height: 8rem;
@@ -359,8 +367,53 @@ textarea::-webkit-scrollbar {
 }
 
 /* Pricing Section */
-.pricing__card {
+.pricing-card {
+	/* Box Model */
+	border: 1px solid var(--border-color);
 	height: 40rem;
+	padding: 2rem;
+	/* Layout */
+	align-items: flex-start;
+}
+
+.pricing-card__title {
+	font-size: 2.5rem;
+}
+
+.pricing-card__price {
+	/* Box Model */
+	padding: 2rem 0;
+	/* Typography */
+	color: var(--accent-color);
+	font-size: 3rem;
+}
+
+.pricing-card__features {
+	/* Box Model */
+	width: 100%;
+	/* Layout */
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.pricing-card__features p {
+	/* Layout */
+	align-items: center;
+	display: flex;
+	gap: 0.5rem;
+	/* Typography */
+	font-size: 0.875rem;
+}
+
+.pricing-card__button {
+	/* Box Model */
+	border: 1px solid var(--border-color);
+	height: 3rem;
+	margin-top: auto;
+	width: 100%;
+	/* Typography */
+	color: var(--secondary-color);
 }
 
 /* Reviews Section */
@@ -453,6 +506,11 @@ textarea::-webkit-scrollbar {
 	gap: 1rem;
 }
 
+.contact-info__container svg {
+	border: 1px solid var(--border-color);
+	border-radius: 0.5rem;
+}
+
 .contact-info__content {
 	/* Layout */
 	align-items: center;
@@ -469,6 +527,8 @@ textarea::-webkit-scrollbar {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	/* Visual Styles */
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .form-user-info {
@@ -487,7 +547,7 @@ textarea::-webkit-scrollbar {
 	border: 2px solid var(--accent-color);
 	height: 3rem;
 	/* Typography */
-	color: var(--secondary-color);
+	color: var(--accent-color);
 }
 
 /* FAQ Section */
