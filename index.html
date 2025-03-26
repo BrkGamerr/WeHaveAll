@@ -26,31 +26,31 @@
 		</nav>
 		<div class="header__buttons-container">
 			<button type="button" class="header__button">Sign In</button>
-			<button type="button" class="account-button__sign-up header__button">Sign Up</button>
+			<button type="button" class="header__button button--highlighted">Sign Up</button>
 		</div>
 		<svg id="sidebarMenuIcon" class="sidebar-menu__icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
 	</header>
 	<div id="sidebarMenu" class="sidebar-menu">
-		<div class="sidebar-menu__account-buttons-container">
-			<button type="button" class="sidebar-menu__account-button">Sign In</button>
-			<button type="button" class="account-button__sign-up sidebar-menu__account-button">Sign Up</button>
+		<div class="sidebar-menu__buttons-container">
+			<button type="button" class="sidebar-menu__button--account">Sign In</button>
+			<button type="button" class="sidebar-menu__button--account button--highlighted">Sign Up</button>
 		</div>
 		<button type="button" id="sidebarMenuFeaturesButton" class="sidebar-menu__button">Features</button>
 		<button type="button" id="sidebarMenuPlansButton" class="sidebar-menu__button">Plans</button>
 		<button type="button" id="sidebarMenuReviewsButton" class="sidebar-menu__button">Reviews</button>
 		<button type="button" id="sidebarMenuContactButton" class="sidebar-menu__button">Contact</button>
 		<button type="button" id="sidebarMenuFAQButton" class="sidebar-menu__button">FAQ</button>
-		<button type="button" id="sidebarMenuClosingButton" class="sidebar-menu__closing-button">&#10006;</button>
+		<button type="button" id="sidebarMenuClosingButton" class="sidebar-menu__button--closing">&#10006;</button>
 	</div>
 	<main>
-		<section class="home-section">
-			<div class="home-section__content">
-				<h1 class="home-section__title">No competition,<br><span>Unlimited fun</span></h1>
-				<p class="home-section__description">We don't care where you live. One library. Same for everyone.</p>
-				<button type="button" class="home-section__button">Get Started</button>
+		<section id="homeSection" class="home-section">
+			<div class="home__content">
+				<h1 class="home__title">No competition,<br><span>Unlimited fun</span></h1>
+				<p class="home__description">We don't care where you live. One library. Same for everyone.</p>
+				<button type="button" class="home__button">Get Started</button>
 			</div>
 		</section>
-		<section class="statistics-section">
+		<section id="statisticsSection">
 			<div class="section__title">
 				<h2>Our results speak for themselves</h2>
 				<p>Take a look at some of our achievements.<br>From number of users, to number of movies and TV shows.</p>
@@ -73,7 +73,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="featuresSection" class="features-section">
+		<section id="featuresSection">
 			<div class="section__content">
 				<div class="section__card features__card">
 					<svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#a600ff"><path d="M480-313 287-506l43-43 120 120v-371h60v371l120-120 43 43-193 193ZM220-160q-24 0-42-18t-18-42v-143h60v143h520v-143h60v143q0 24-18 42t-42 18H220Z"/></svg>
@@ -107,17 +107,17 @@
 				</div>
 			</div>
 		</section>
-		<section id="pricingSection" class="pricing-section">
+		<section id="pricingSection">
 			<div class="section__title">
 				<h2>Fit for all your needs</h2>
 				<p>Plans that suit your needs and budget.<br>Change, cancel and continue anytime you want.</p>
 			</div>
 			<div class="section__content">
-				<div class="section__card pricing-card">
-					<h3 class="pricing-card__title">Basic Plan</h3>
-					<p class="pricing-card__description">the cheap one</p>
-					<h3 class="pricing-card__price">$4.99<sub> / month</sub></h3>
-					<div class="pricing-card__features">
+				<div class="section__card pricing__card">
+					<h3 class="pricing__card-title">Basic Plan</h3>
+					<p class="pricing__card-description">the cheap one</p>
+					<h3 class="pricing__card-price">$4.99<sub> / month</sub></h3>
+					<div class="pricing__card-features">
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							Unlimited ad-free entertainment</p>
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
@@ -127,13 +127,13 @@
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							Download on 1 device at a time</p>
 					</div>
-					<button type="button" class="pricing-card__button">Buy now</button>
+					<button type="button" class="pricing__card-button">Buy now</button>
 				</div>
-				<div class="section__card pricing-card">
-					<h3 class="pricing-card__title">Standard Plan</h3>
-					<p class="pricing-card__description">the balanced one</p>
-					<h3 class="pricing-card__price">$7.99<sub> / month</sub></h3>
-					<div class="pricing-card__features">
+				<div class="section__card pricing__card">
+					<h3 class="pricing__card-title">Standard Plan</h3>
+					<p class="pricing__card-description">the balanced one</p>
+					<h3 class="pricing__card-price">$7.99<sub> / month</sub></h3>
+					<div class="pricing__card-features">
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							Unlimited ad-free entertainment</p>
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
@@ -143,13 +143,13 @@
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							Download on 2 devices at a time</p>
 					</div>
-					<button type="button" class="pricing-card__button">Buy now</button>
+					<button type="button" class="pricing__card-button">Buy now</button>
 				</div>
-				<div class="section__card pricing-card">
-					<h3 class="pricing-card__title">Premium Plan</h3>
-					<p class="pricing-card__description">the luxury one</p>
-					<h3 class="pricing-card__price">$9.99<sub> / month</sub></h3>
-					<div class="pricing-card__features">
+				<div class="section__card pricing__card">
+					<h3 class="pricing__card-title">Premium Plan</h3>
+					<p class="pricing__card-description">the luxury one</p>
+					<h3 class="pricing__card-price">$9.99<sub> / month</sub></h3>
+					<div class="pricing__card-features">
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							Unlimited ad-free entertainment</p>
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
@@ -161,26 +161,26 @@
 						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							WeHaveAll spatial audio</p>
 					</div>
-					<button type="button" class="pricing-card__button">Buy now</button>
+					<button type="button" class="pricing__card-button">Buy now</button>
 				</div>
 			</div>
 		</section>
 	</main>
-	<section id="reviewsSection" class="reviews-section">
+	<section id="reviewsSection">
 		<div class="section__title">
 			<h2>Don't trust us?</h2>
 			<p>Don't need to, look at users experience.<br>Our users are the reflection of our business.</p>
 		</div>
 		<div class="section__content">
 			<div class="section__card reviews__card">
-				<div class="reviews__user">
+				<div class="reviews__card-user">
 					<img src="assets/images/reviews__user1.jpg" alt="">
-					<div class="reviews__title">
+					<div class="reviews__card-title">
 						<h4>Olivia Thompson</h4>
 						<p>53</p>
 					</div>
 				</div>
-				<p class="reviews__comment">
+				<p class="reviews__card-comment">
 					"WeHaveAll has completely transformed my evenings!
 					Whether I'm in the mood for a gripping thriller or a light-hearted comedy,
 					there's always something to suit my vibe. The recommendations get better the more I watch,
@@ -188,97 +188,97 @@
 				</p>
 			</div>
 			<div class="section__card reviews__card">
-				<div class="reviews__user">
+				<div class="reviews__card-user">
 					<img src="assets/images/reviews__user2.jpg" alt="">
-					<div class="reviews__title">
+					<div class="reviews__card-title">
 						<h4>Mia Patterson</h4>
 						<p>28</p>
 					</div>
 				</div>
-				<p class="reviews__comment">
+				<p class="reviews__card-comment">
 					"WeHaveAll Originals are an absolute game-changer. The quality of storytelling is unmatched,
 					and I often find myself binge-watching entire seasons in one sitting.
 					Their global content is amazing too—I’ve discovered shows and movies from countries I’d never even thought of."
 				</p>
 			</div>
 			<div class="section__card reviews__card">
-				<div class="reviews__user">
+				<div class="reviews__card-user">
 					<img src="assets/images/reviews__user3.jpg" alt="">
-					<div class="reviews__title">
+					<div class="reviews__card-title">
 						<h4>Ethan Carter</h4>
 						<p>32</p>
 					</div>
 				</div>
-				<p class="reviews__comment">
+				<p class="reviews__card-comment">
 					"What I enjoy most about WeHaveAll is the freedom it gives me. I can watch what I want,
 					when I want—no schedules or commercials! The autoplay feature is a blessing (or a curse), and it always keeps me hooked."
 				</p>
 			</div>
 			<div class="section__card reviews__card">
-				<div class="reviews__user">
+				<div class="reviews__card-user">
 					<img src="assets/images/reviews__user4.jpg" alt="">
-					<div class="reviews__title">
+					<div class="reviews__card-title">
 						<h4>Sophia Adams</h4>
 						<p>44</p>
 					</div>
 				</div>
-				<p class="reviews__comment">
+				<p class="reviews__card-comment">
 					"I love how WeHaveAll caters to every member of my family.
 					From kid-friendly shows to intense documentaries, it's our go-to streaming platform.
 					The seamless interface and the ability to download episodes for offline viewing make it so convenient."
 				</p>
 			</div>
 			<div class="section__card reviews__card">
-				<div class="reviews__user">
+				<div class="reviews__card-user">
 					<img src="assets/images/reviews__user5.jpg" alt="">
-					<div class="reviews__title">
+					<div class="reviews__card-title">
 						<h4>Lucas Murphy</h4>
 						<p>31</p>
 					</div>
 				</div>
-				<p class="reviews__comment">
+				<p class="reviews__card-comment">
 					"WeHaveAll keeps surprising me with its vast library of genres. Whether it’s horror, fantasy,
 					or a powerful drama, I find myself spoiled for choice.
 					It’s a relief to know I can rely on it to brighten a dull day or keep me entertained on a quiet evening."
 				</p>
 			</div>
 			<div class="section__card reviews__card">
-				<div class="reviews__user">
+				<div class="reviews__card-user">
 					<img src="assets/images/reviews__user6.jpg" alt="">
-					<div class="reviews__title">
+					<div class="reviews__card-title">
 						<h4>Liam Rivera</h4>
 						<p>58</p>
 					</div>
 				</div>
-				<p class="reviews__comment">
+				<p class="reviews__card-comment">
 					"WeHaveAll has been a wonderful companion for me in my golden years.
 					I love how I can revisit classic movies and discover new shows at my own pace.
 					The subtitles and simple interface make it so easy to use."
 				</p>
 			</div>
 			<div class="section__card reviews__card">
-				<div class="reviews__user">
+				<div class="reviews__card-user">
 					<img src="assets/images/reviews__user7.jpg" alt="">
-					<div class="reviews__title">
+					<div class="reviews__card-title">
 						<h4>Ava Sullivan</h4>
 						<p>47</p>
 					</div>
 				</div>
-				<p class="reviews__comment">
+				<p class="reviews__card-comment">
 					"WeHaveAll feels like home to me.
 					Whether I'm curled up on the couch or sneaking in an episode on my phone during lunch breaks,
 					it’s a constant source of comfort. The variety and quality of their offerings make it my favorite platform by a mile."
 				</p>
 			</div>
 			<div class="section__card reviews__card">
-				<div class="reviews__user">
+				<div class="reviews__card-user">
 					<img src="assets/images/reviews__user8.jpg" alt="">
-					<div class="reviews__title">
+					<div class="reviews__card-title">
 						<h4>Noah Bennett</h4>
 						<p>45</p>
 					</div>
 				</div>
-				<p class="reviews__comment">
+				<p class="reviews__card-comment">
 					"I’ve been a WeHaveAll subscriber for years, and it keeps getting better.
 					The constant addition of new movies and shows ensures I never run out of options.
 					The personalized profiles are a great touch too—they make sharing an account with my partner so much smoother."
@@ -306,24 +306,24 @@
 			</div>
 		</div>
 		<form class="contact__card contact-form">
-			<div class="form-user-info">
-				<div class="form-user-info__name">
+			<div class="contact-form__info">
+				<div class="contact-form__info-name">
 					<label for="nameInput">Name</label>
 					<input type="text" name="name" id="nameInput" placeholder="Your name">
 				</div>
-				<div class="form-user-info__email">
+				<div class="contact-form__info-email">
 					<label for="emailInput">Email</label>
 					<input type="email" name="email" id="emailInput" placeholder="Your email" required>
 				</div>
 			</div>
-			<div class="form-user-message">
+			<div>
 				<label for="messageInput">Message</label>
 				<textarea name="message" id="messageInput" placeholder="Your message"></textarea>
 			</div>
-			<button type="submit" class="form-button">Submit</button>
+			<button type="submit" class="contact-form__button button--highlighted">Submit</button>
 		</form>
 	</section>
-	<section id="faqSection" class="faq-section">
+	<section id="faqSection">
 		<div class="section__title">
 			<h2>Got some questions?</h2>
 			<p>We already have some answers.</p>
