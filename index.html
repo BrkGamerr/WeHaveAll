@@ -9,65 +9,64 @@
 	<link rel="stylesheet"
 	      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="animations.css">
 	<link rel="stylesheet" href="media-queries.css">
 	<script src="script.js" defer></script>
 </head>
 <body>
 	<header>
-		<h2 class="header__logo">WeHave<span>All</span></h2>
+		<h5 class="header__logo">WeHave<span>All</span></h5>
 		<nav>
 			<ul>
-				<li><a href="#featuresSection">Features</a></li>
-				<li><a href="#pricingSection">Plans</a></li>
-				<li><a href="#reviewsSection">Reviews</a></li>
-				<li><a href="#contactSection">Contact</a></li>
-				<li><a href="#faqSection">FAQ</a></li>
+				<li><a class="text-hover" href="#featuresSection">Features</a></li>
+				<li><a class="text-hover" href="#pricingSection">Plans</a></li>
+				<li><a class="text-hover" href="#reviewsSection">Reviews</a></li>
+				<li><a class="text-hover" href="#faqSection">FAQ</a></li>
 			</ul>
 		</nav>
 		<div class="header__buttons-container">
-			<button type="button" class="header__button">Sign In</button>
-			<button type="button" class="header__button button--highlighted">Sign Up</button>
+			<button type="button" class="header__button text-hover">Sign In</button>
+			<button type="button" class="header__button button--highlighted-2px button-hover">Sign Up</button>
 		</div>
 		<svg id="sidebarMenuIcon" class="sidebar-menu__icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
 	</header>
 	<div id="sidebarMenu" class="sidebar-menu hide">
 		<div class="sidebar-menu__buttons-container">
-			<button type="button" class="sidebar-menu__button--account">Sign In</button>
-			<button type="button" class="sidebar-menu__button--account button--highlighted">Sign Up</button>
+			<button type="button" class="sidebar-menu__button--account text-hover">Sign In</button>
+			<button type="button" class="sidebar-menu__button--account button--highlighted-2px button-hover">Sign Up</button>
 		</div>
-		<button type="button" id="sidebarMenuFeaturesButton" class="sidebar-menu__button">Features</button>
-		<button type="button" id="sidebarMenuPlansButton" class="sidebar-menu__button">Plans</button>
-		<button type="button" id="sidebarMenuReviewsButton" class="sidebar-menu__button">Reviews</button>
-		<button type="button" id="sidebarMenuContactButton" class="sidebar-menu__button">Contact</button>
-		<button type="button" id="sidebarMenuFAQButton" class="sidebar-menu__button">FAQ</button>
-		<button type="button" id="sidebarMenuClosingButton" class="sidebar-menu__button--closing">&#10006;</button>
+		<button type="button" id="sidebarMenuFeaturesButton" class="sidebar-menu__button text-hover">Features</button>
+		<button type="button" id="sidebarMenuPlansButton" class="sidebar-menu__button text-hover">Plans</button>
+		<button type="button" id="sidebarMenuReviewsButton" class="sidebar-menu__button text-hover">Reviews</button>
+		<button type="button" id="sidebarMenuFAQButton" class="sidebar-menu__button text-hover">FAQ</button>
+		<button type="button" id="sidebarMenuClosingButton" class="sidebar-menu__button--closing text-hover">&#10006;</button>
 	</div>
 	<main>
 		<section id="homeSection" class="home-section">
 			<div class="home__content">
-				<h1 class="home__title">No competition,<br><span>Unlimited fun</span></h1>
-				<p class="home__description">We don't care where you live. One library. Same for everyone.</p>
-				<button type="button" class="home__button">Get Started</button>
+				<h1>Your favorite shows,<br><span>all in one place.</span></h1>
+				<p class="home__description">We don't care where you live.<br>One library. Same for everyone.</p>
+				<button type="button" class="home__button button--highlighted-1px">Start Now</button>
 			</div>
 		</section>
 		<section id="statisticsSection">
 			<div class="section__title">
-				<h2>Our results speak for themselves</h2>
+				<h2>Our results speak for themselves.</h2>
 				<p>Take a look at some of our achievements.<br>From number of users, to number of movies and TV shows.</p>
 			</div>
 			<div class="section__content">
 				<div class="section__card statistics__card">
-					<svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="#a600ff"><path d="M0-240v-53q0-38.57 41.5-62.78Q83-380 150.38-380q12.16 0 23.39.5t22.23 2.15q-8 17.35-12 35.17-4 17.81-4 37.18v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-19.86-3.5-37.43T765-377.27q11-1.73 22.17-2.23 11.17-.5 22.83-.5 67.5 0 108.75 23.77T960-293v53H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.57-410q-28.57 0-49.07-20.56Q80-451.13 80-480q0-29 20.56-49.5Q121.13-550 150-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T149.57-410Zm660 0q-28.57 0-49.07-20.56Q740-451.13 740-480q0-29 20.56-49.5Q781.13-550 810-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T809.57-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.35-60Q506-540 523-557.35t17-43Q540-626 522.85-643t-42.5-17q-25.35 0-42.85 17.15t-17.5 42.5q0 25.35 17.35 42.85t43 17.5ZM480-300Zm0-300Z"/></svg>					<h3 class="statistics-card__title"></h3>
+					<svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="#a600ff"><path d="M0-240v-53q0-38.57 41.5-62.78Q83-380 150.38-380q12.16 0 23.39.5t22.23 2.15q-8 17.35-12 35.17-4 17.81-4 37.18v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-19.86-3.5-37.43T765-377.27q11-1.73 22.17-2.23 11.17-.5 22.83-.5 67.5 0 108.75 23.77T960-293v53H780Zm-480-60h360v-6q0-37-50.5-60.5T480-390q-79 0-129.5 23.5T300-305v5ZM149.57-410q-28.57 0-49.07-20.56Q80-451.13 80-480q0-29 20.56-49.5Q121.13-550 150-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T149.57-410Zm660 0q-28.57 0-49.07-20.56Q740-451.13 740-480q0-29 20.56-49.5Q781.13-550 810-550q29 0 49.5 20.5t20.5 49.93q0 28.57-20.5 49.07T809.57-410ZM480-480q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm.35-60Q506-540 523-557.35t17-43Q540-626 522.85-643t-42.5-17q-25.35 0-42.85 17.15t-17.5 42.5q0 25.35 17.35 42.85t43 17.5ZM480-300Zm0-300Z"/></svg>
 					<h3>200+ Million Users</h3>
 					<p>Over 200+ million paying customers per year.</p>
 				</div>
 				<div class="section__card statistics__card">
-					<svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="#a600ff"><path d="M200-120v-680h343l19 86h238v370H544l-18.93-85H260v309h-60Zm300-452Zm95 168h145v-250H511l-19-86H260v251h316l19 85Z"/></svg>					<h3 class="statistics-card__title"></h3>
+					<svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="#a600ff"><path d="M200-120v-680h343l19 86h238v370H544l-18.93-85H260v309h-60Zm300-452Zm95 168h145v-250H511l-19-86H260v251h316l19 85Z"/></svg>
 					<h3>190+ Countries</h3>
 					<p>Available in almost every single country in the world.</p>
 				</div>
 				<div class="section__card statistics__card">
-					<svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="#a600ff"><path d="m424-373 260-167-260-167v334ZM260-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h560q24 0 42 18t18 42v560q0 24-18 42t-42 18H260Zm0-60h560v-560H260v560ZM140-80q-24 0-42-18t-18-42v-620h60v620h620v60H140Zm120-740v560-560Z"/></svg>					<h3 class="statistics-card__title"></h3>
+					<svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="#a600ff"><path d="m424-373 260-167-260-167v334ZM260-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h560q24 0 42 18t18 42v560q0 24-18 42t-42 18H260Zm0-60h560v-560H260v560ZM140-80q-24 0-42-18t-18-42v-620h60v620h620v60H140Zm120-740v560-560Z"/></svg>
 					<h3>7000+ Titles</h3>
 					<p>Be sure that whatever you want to watch, we got it.</p>
 				</div>
@@ -93,11 +92,11 @@
 				<div class="section__card features__card">
 					<svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#a600ff"><path d="M662-60 520-202l42-42 99 99 184-184 42 43L662-60ZM289-287l-42-42 71-71-71-71 42-42 71 71 71-71 42 42-71 71 71 71-42 42-71-71-71 71ZM180-80q-24 0-42-18t-18-42v-620q0-24 18-42t42-18h65v-60h65v60h340v-60h65v60h65q24 0 42 18t18 42v352l-60 60v-222H180v430h317l60 60H180Zm0-550h600v-130H180v130Zm0 0v-130 130Z"/></svg>
 					<h3>Cancel Anytime</h3>
-					<p>With just 2 click you can easily cancel your subscription.</p>
+					<p>With just two clicks, you can cancel your subscription.</p>
 				</div>
 				<div class="section__card features__card">
 					<svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#a600ff"><path d="M80-160v-90h80v-490q0-24.75 17.63-42.38Q195.25-800 220-800h620v60H220v490h240v90H80Zm470 0q-12.75 0-21.37-8.63Q520-177.25 520-190v-460q0-12.75 8.63-21.38Q537.25-680 550-680h300q12.75 0 21.38 8.62Q880-662.75 880-650v460q0 12.75-8.62 21.37Q862.75-160 850-160H550Zm30-90h240v-370H580v370Zm0 0h240-240Z"/></svg>
-					<h3>Watch Everywhere</h3>
+					<h3>Watch Anywhere</h3>
 					<p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
 				</div>
 				<div class="section__card features__card">
@@ -109,284 +108,257 @@
 		</section>
 		<section id="pricingSection">
 			<div class="section__title">
-				<h2>Fit for all your needs</h2>
+				<h2>Fit for all your needs.</h2>
 				<p>Plans that suit your needs and budget.<br>Change, cancel and continue anytime you want.</p>
 			</div>
 			<div class="section__content">
-				<div class="section__card pricing__card">
-					<h3 class="pricing__card-title">Basic Plan</h3>
-					<p class="pricing__card-description">the cheap one</p>
-					<h3 class="pricing__card-price">$4.99<sub> / month</sub></h3>
+				<article class="section__card pricing__card">
+					<h4>Basic Plan</h4>
+					<p>the affordable</p>
+					<p class="pricing__card-price">$4.99<sub> / month</sub></p>
 					<div class="pricing__card-features">
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Unlimited ad-free entertainment</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Watch on 1 device at a time</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Endless ad-free entertainment</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Watch on one device</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							Watch in 720p (HD)</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Download on 1 device at a time</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Download on one device</p>
 					</div>
-					<button type="button" class="pricing__card-button">Buy now</button>
-				</div>
-				<div class="section__card pricing__card">
-					<h3 class="pricing__card-title">Standard Plan</h3>
-					<p class="pricing__card-description">the balanced one</p>
-					<h3 class="pricing__card-price">$7.99<sub> / month</sub></h3>
+					<button type="button" class="pricing__card-button button--highlighted-1px">Buy now</button>
+				</article>
+				<article class="section__card pricing__card">
+					<h4>Standard Plan</h4>
+					<p>the most popular</p>
+					<p class="pricing__card-price">$7.99<sub> / month</sub></p>
 					<div class="pricing__card-features">
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Unlimited ad-free entertainment</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Watch on 2 devices at a time</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Endless ad-free entertainment</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Watch on two devices</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							Watch in 1080p (Full HD)</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Download on 2 devices at a time</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Download on two devices</p>
 					</div>
-					<button type="button" class="pricing__card-button">Buy now</button>
-				</div>
-				<div class="section__card pricing__card">
-					<h3 class="pricing__card-title">Premium Plan</h3>
-					<p class="pricing__card-description">the luxury one</p>
-					<h3 class="pricing__card-price">$9.99<sub> / month</sub></h3>
+					<button type="button" class="pricing__card-button button--highlighted-1px">Buy now</button>
+				</article>
+				<article class="section__card pricing__card">
+					<h4>Premium Plan</h4>
+					<p>the luxurious</p>
+					<p class="pricing__card-price">$9.99<sub> / month</sub></p>
 					<div class="pricing__card-features">
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Unlimited ad-free entertainment</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Watch on 4 devices at a time</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Endless ad-free entertainment</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Watch on four devices</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							Watch in 4k (Ultra HD) + HDR</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
-							Download on 6 devices at a time</p>
-						<p><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
+							Download on six devices</p>
+						<p><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#a600ff"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Zm0-66.67q139.33 0 236.33-97.33t97-236q0-139.33-97-236.33t-236.33-97q-138.67 0-236 97-97.33 97-97.33 236.33 0 138.67 97.33 236 97.33 97.33 236 97.33ZM480-480Z"/></svg>
 							WeHaveAll spatial audio</p>
 					</div>
-					<button type="button" class="pricing__card-button">Buy now</button>
-				</div>
+					<button type="button" class="pricing__card-button button--highlighted-1px">Buy now</button>
+				</article>
 			</div>
 		</section>
+		<section id="reviewsSection">
+			<div class="section__title">
+				<h2>Don't trust us?</h2>
+				<p>Don't need to. Look at experiences.<br>Our users are the reflection of our business.</p>
+			</div>
+			<div class="section__content">
+				<figure class="section__card reviews__card">
+					<figcaption class="reviews__card-user">
+						<img src="assets/images/reviews__user1.jpg" alt="">
+						<div class="reviews__card-title">
+							<p>Olivia Thompson</p>
+							<p>53</p>
+						</div>
+					</figcaption>
+					<blockquote class="reviews__card-comment">
+						"WeHaveAll has completely transformed my evenings!
+						Whether I'm in the mood for a gripping thriller or a light-hearted comedy, there's always something to suit my vibe.
+						The recommendations get better the more I watch, and the original content is unparalleled."
+					</blockquote>
+				</figure>
+				<figure class="section__card reviews__card">
+					<figcaption class="reviews__card-user">
+						<img src="assets/images/reviews__user2.jpg" alt="">
+						<div class="reviews__card-title">
+							<p>Mia Patterson</p>
+							<p>28</p>
+						</div>
+					</figcaption>
+					<blockquote class="reviews__card-comment">
+						"WeHaveAll Originals are an absolute game-changer.
+						The quality of storytelling is unmatched, and I often find myself binge-watching entire seasons in one sitting.
+						Their global content is amazing too—I’ve discovered shows and movies from countries I’d never even thought of."
+					</blockquote>
+				</figure>
+				<figure class="section__card reviews__card">
+					<figcaption class="reviews__card-user">
+						<img src="assets/images/reviews__user3.jpg" alt="">
+						<div class="reviews__card-title">
+							<p>Ethan Carter</p>
+							<p>32</p>
+						</div>
+					</figcaption>
+					<blockquote class="reviews__card-comment">
+						"What I enjoy most about WeHaveAll is the freedom it gives me.
+						I can watch what I want when I want—no schedules or commercials!
+						The autoplay feature is a blessing (or a curse), and it always keeps me hooked."
+					</blockquote>
+				</figure>
+				<figure class="section__card reviews__card">
+					<figcaption class="reviews__card-user">
+						<img src="assets/images/reviews__user4.jpg" alt="">
+						<div class="reviews__card-title">
+							<p>Sophia Adams</p>
+							<p>44</p>
+						</div>
+					</figcaption>
+					<blockquote class="reviews__card-comment">
+						"I love how WeHaveAll caters to every member of my family.
+						From kid-friendly shows to intense documentaries, it's our go-to streaming platform.
+						The seamless interface and the ability to download episodes for offline viewing make it so convenient."
+					</blockquote>
+				</figure>
+				<figure class="section__card reviews__card">
+					<figcaption class="reviews__card-user">
+						<img src="assets/images/reviews__user5.jpg" alt="">
+						<div class="reviews__card-title">
+							<p>Lucas Murphy</p>
+							<p>31</p>
+						</div>
+					</figcaption>
+					<blockquote class="reviews__card-comment">
+						"WeHaveAll keeps surprising me with its vast library of genres.
+						Whether it’s horror, fantasy, or a powerful drama, I find myself spoiled for choice.
+						It’s a relief to know I can rely on it to brighten a dull day or keep me entertained on a quiet evening."
+					</blockquote>
+				</figure>
+				<figure class="section__card reviews__card">
+					<figcaption class="reviews__card-user">
+						<img src="assets/images/reviews__user6.jpg" alt="">
+						<div class="reviews__card-title">
+							<p>Liam Rivera</p>
+							<p>58</p>
+						</div>
+					</figcaption>
+					<blockquote class="reviews__card-comment">
+						"WeHaveAll has been a wonderful companion for me in my golden years.
+						I love how I can revisit classic movies and discover new shows at my own pace.
+						The subtitles and simple interface make it so easy to use."
+					</blockquote>
+				</figure>
+				<figure class="section__card reviews__card">
+					<figcaption class="reviews__card-user">
+						<img src="assets/images/reviews__user7.jpg" alt="">
+						<div class="reviews__card-title">
+							<p>Ava Sullivan</p>
+							<p>47</p>
+						</div>
+					</figcaption>
+					<blockquote class="reviews__card-comment">
+						"WeHaveAll feels like home to me.
+						Whether I'm curled up on the couch or sneaking in an episode on my phone during lunch breaks, it’s a constant source of comfort.
+						The variety and quality of their offerings make it my favorite platform by a mile."
+					</blockquote>
+				</figure>
+				<figure class="section__card reviews__card">
+					<figcaption class="reviews__card-user">
+						<img src="assets/images/reviews__user8.jpg" alt="">
+						<div class="reviews__card-title">
+							<p>Noah Bennett</p>
+							<p>45</p>
+						</div>
+					</figcaption>
+					<blockquote class="reviews__card-comment">
+						"I’ve been a WeHaveAll subscriber for years, and it keeps getting better.
+						The constant addition of new movies and shows ensures I never run out of options.
+						The personalized profiles are a great touch too—they make sharing an account with my partner so much smoother."
+					</blockquote>
+				</figure>
+			</div>
+		</section>
+		<section id="faqSection">
+			<div class="section__title">
+				<h2>Got some questions?</h2>
+				<p>We already have some answers.</p>
+			</div>
+			<ul class="faq__content">
+				<li>
+					<button type="button" id="faqQuestion1" class="faq__question">What is WeHaveAll?</button>
+					<p id="faqAnswer1" class="faq__answer hide">
+						WeHaveAll is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+						<br>
+						<br>
+						You can watch as much as you want whenever you want without a single commercial – all for one low monthly price.
+						There's always something new to discover, and new TV shows and movies are added every week!
+					</p>
+				</li>
+				<li>
+					<button type="button" id="faqQuestion2" class="faq__question">How much does it cost?</button>
+					<p id="faqAnswer2" class="faq__answer hide">
+						Watch WeHaveAll on your smartphone, tablet, smart TV, laptop, or streaming device, all for one fixed monthly fee.
+						Plans range from $4.99 to $9.99 a month.
+						No extra costs, no contracts.
+					</p>
+				</li>
+				<li>
+					<button type="button" id="faqQuestion3" class="faq__question">Where can I watch?</button>
+					<p id="faqAnswer3" class="faq__answer hide">
+						Watch anywhere, anytime.
+						Sign in with your WeHaveAll account to watch instantly on the web from your personal computer or on any internet-connected device that offers the WeHaveAll app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+						<br>
+						<br>
+						You can also download your favorite shows with the iOS or Android app.
+						Use downloads to watch while you're on the go and without an internet connection.
+						Take WeHaveAll with you anywhere.
+					</p>
+				</li>
+				<li>
+					<button type="button" id="faqQuestion4" class="faq__question">How do I cancel?</button>
+					<p id="faqAnswer4" class="faq__answer hide">
+						WeHaveAll is flexible.
+						There are no pesky contracts and no commitments.
+						You can cancel your account online in two clicks.
+						There are no cancellation fees – start or stop your account anytime.
+					</p>
+				</li>
+				<li>
+					<button type="button" id="faqQuestion5" class="faq__question">What can I watch?</button>
+					<p id="faqAnswer5" class="faq__answer hide">
+						WeHaveAll has an extensive library of feature films, documentaries, TV shows, anime, award-winning WeHaveAll originals, and more.
+						Watch as much as you want, anytime you want.
+					</p>
+				</li>
+				<li>
+					<button type="button" id="faqQuestion6" class="faq__question">Is WeHaveAll good for kids?</button>
+					<p id="faqAnswer6" class="faq__answer hide">
+						The WeHaveAll Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+						<br>
+						<br>
+						Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+					</p>
+				</li>
+			</ul>
+		</section>
+		<footer>
+			<h5 class="footer__logo">WeHave<span>All</span></h5>
+			<p>Follow us on social media.</p>
+			<ul class="footer__socials">
+				<li><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 320 512"><path fill="#ffffff" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></li>
+				<li><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 448 512"><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></li>
+				<li><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 448 512"><path fill="#ffffff" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></li>
+				<li><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 512 512"><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></li>
+				<li><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 576 512"><path fill="#ffffff" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></li>
+			</ul>
+			<p class="footer__copyright">© 2025 WeHaveAll. All rights reserved.</p>
+		</footer>
 	</main>
-	<section id="reviewsSection">
-		<div class="section__title">
-			<h2>Don't trust us?</h2>
-			<p>Don't need to, look at users experience.<br>Our users are the reflection of our business.</p>
-		</div>
-		<div class="section__content">
-			<div class="section__card reviews__card">
-				<div class="reviews__card-user">
-					<img src="assets/images/reviews__user1.jpg" alt="">
-					<div class="reviews__card-title">
-						<h4>Olivia Thompson</h4>
-						<p>53</p>
-					</div>
-				</div>
-				<p class="reviews__card-comment">
-					"WeHaveAll has completely transformed my evenings!
-					Whether I'm in the mood for a gripping thriller or a light-hearted comedy,
-					there's always something to suit my vibe. The recommendations get better the more I watch,
-					and the original content is unparalleled."
-				</p>
-			</div>
-			<div class="section__card reviews__card">
-				<div class="reviews__card-user">
-					<img src="assets/images/reviews__user2.jpg" alt="">
-					<div class="reviews__card-title">
-						<h4>Mia Patterson</h4>
-						<p>28</p>
-					</div>
-				</div>
-				<p class="reviews__card-comment">
-					"WeHaveAll Originals are an absolute game-changer. The quality of storytelling is unmatched,
-					and I often find myself binge-watching entire seasons in one sitting.
-					Their global content is amazing too—I’ve discovered shows and movies from countries I’d never even thought of."
-				</p>
-			</div>
-			<div class="section__card reviews__card">
-				<div class="reviews__card-user">
-					<img src="assets/images/reviews__user3.jpg" alt="">
-					<div class="reviews__card-title">
-						<h4>Ethan Carter</h4>
-						<p>32</p>
-					</div>
-				</div>
-				<p class="reviews__card-comment">
-					"What I enjoy most about WeHaveAll is the freedom it gives me. I can watch what I want,
-					when I want—no schedules or commercials! The autoplay feature is a blessing (or a curse), and it always keeps me hooked."
-				</p>
-			</div>
-			<div class="section__card reviews__card">
-				<div class="reviews__card-user">
-					<img src="assets/images/reviews__user4.jpg" alt="">
-					<div class="reviews__card-title">
-						<h4>Sophia Adams</h4>
-						<p>44</p>
-					</div>
-				</div>
-				<p class="reviews__card-comment">
-					"I love how WeHaveAll caters to every member of my family.
-					From kid-friendly shows to intense documentaries, it's our go-to streaming platform.
-					The seamless interface and the ability to download episodes for offline viewing make it so convenient."
-				</p>
-			</div>
-			<div class="section__card reviews__card">
-				<div class="reviews__card-user">
-					<img src="assets/images/reviews__user5.jpg" alt="">
-					<div class="reviews__card-title">
-						<h4>Lucas Murphy</h4>
-						<p>31</p>
-					</div>
-				</div>
-				<p class="reviews__card-comment">
-					"WeHaveAll keeps surprising me with its vast library of genres. Whether it’s horror, fantasy,
-					or a powerful drama, I find myself spoiled for choice.
-					It’s a relief to know I can rely on it to brighten a dull day or keep me entertained on a quiet evening."
-				</p>
-			</div>
-			<div class="section__card reviews__card">
-				<div class="reviews__card-user">
-					<img src="assets/images/reviews__user6.jpg" alt="">
-					<div class="reviews__card-title">
-						<h4>Liam Rivera</h4>
-						<p>58</p>
-					</div>
-				</div>
-				<p class="reviews__card-comment">
-					"WeHaveAll has been a wonderful companion for me in my golden years.
-					I love how I can revisit classic movies and discover new shows at my own pace.
-					The subtitles and simple interface make it so easy to use."
-				</p>
-			</div>
-			<div class="section__card reviews__card">
-				<div class="reviews__card-user">
-					<img src="assets/images/reviews__user7.jpg" alt="">
-					<div class="reviews__card-title">
-						<h4>Ava Sullivan</h4>
-						<p>47</p>
-					</div>
-				</div>
-				<p class="reviews__card-comment">
-					"WeHaveAll feels like home to me.
-					Whether I'm curled up on the couch or sneaking in an episode on my phone during lunch breaks,
-					it’s a constant source of comfort. The variety and quality of their offerings make it my favorite platform by a mile."
-				</p>
-			</div>
-			<div class="section__card reviews__card">
-				<div class="reviews__card-user">
-					<img src="assets/images/reviews__user8.jpg" alt="">
-					<div class="reviews__card-title">
-						<h4>Noah Bennett</h4>
-						<p>45</p>
-					</div>
-				</div>
-				<p class="reviews__card-comment">
-					"I’ve been a WeHaveAll subscriber for years, and it keeps getting better.
-					The constant addition of new movies and shows ensures I never run out of options.
-					The personalized profiles are a great touch too—they make sharing an account with my partner so much smoother."
-				</p>
-			</div>
-		</div>
-	</section>
-	<section id="contactSection" class="contact-section">
-		<div class="contact__card contact-info">
-			<h2>Talk to us easily</h2>
-			<p>We're committed to delivering the support you require to make your experience as smooth as possible.</p>
-			<div class="contact-info__container">
-				<div class="contact-info__content">
-					<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#a600ff"><path d="M120-120v-556.67h163.33V-840h393.34v326.67H840V-120H528.67v-163.33h-97.34V-120H120Zm66.67-66.67h96.66v-96.66h-96.66v96.66Zm0-163.33h96.66v-96.67h-96.66V-350Zm0-163.33h96.66V-610h-96.66v96.67ZM350-350h96.67v-96.67H350V-350Zm0-163.33h96.67V-610H350v96.67Zm0-163.34h96.67v-96.66H350v96.66ZM513.33-350H610v-96.67h-96.67V-350Zm0-163.33H610V-610h-96.67v96.67Zm0-163.34H610v-96.66h-96.67v96.66Zm163.34 490h96.66v-96.66h-96.66v96.66Zm0-163.33h96.66v-96.67h-96.66V-350Z"/></svg>
-					<p>123 Maple Street, Springfield, IL, USA</p>
-				</div>
-				<div class="contact-info__content">
-					<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#a600ff"><path d="M796-120q-119 0-240-55.5T333-333Q231-435 175.5-556T120-796q0-18.86 12.57-31.43T164-840h147.33q14 0 24.34 9.83Q346-820.33 349.33-806l26.62 130.43q2.05 14.9-.62 26.24-2.66 11.33-10.82 19.48L265.67-530q24 41.67 52.5 78.5T381-381.33q35 35.66 73.67 65.5Q493.33-286 536-262.67l94.67-96.66q9.66-10.34 23.26-14.5 13.61-4.17 26.74-2.17L806-349.33q14.67 4 24.33 15.53Q840-322.27 840-308v144q0 18.86-12.57 31.43T796-120ZM233-592l76-76.67-21-104.66H187q3 41.66 13.67 86Q211.33-643 233-592Zm365.33 361.33q40.34 18.34 85.84 29.67 45.5 11.33 89.16 13.67V-288l-100-20.33-75 77.66ZM233-592Zm365.33 361.33Z"/></svg>
-					<p>+1 (650) 555-0198</p>
-				</div>
-				<div class="contact-info__content">
-					<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#a600ff"><path d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-506.66q0-27 19.83-46.84Q119.67-800 146.67-800h666.66q27 0 46.84 19.83Q880-760.33 880-733.33v506.66q0 27-19.83 46.84Q840.33-160 813.33-160H146.67ZM480-454.67 146.67-670v443.33h666.66V-670L480-454.67Zm0-66.66 330.67-212H150l330 212ZM146.67-670v-63.33V-226.67-670Z"/></svg>
-					<p>support@wehaveall.com</p>
-				</div>
-			</div>
-		</div>
-		<form class="contact__card contact-form">
-			<div class="contact-form__info">
-				<div class="contact-form__info-name">
-					<label for="nameInput">Name</label>
-					<input type="text" name="name" id="nameInput" placeholder="Your name">
-				</div>
-				<div class="contact-form__info-email">
-					<label for="emailInput">Email</label>
-					<input type="email" name="email" id="emailInput" placeholder="Your email" required>
-				</div>
-			</div>
-			<div>
-				<label for="messageInput">Message</label>
-				<textarea name="message" id="messageInput" placeholder="Your message"></textarea>
-			</div>
-			<button type="submit" class="contact-form__button button--highlighted">Submit</button>
-		</form>
-	</section>
-	<section id="faqSection">
-		<div class="section__title">
-			<h2>Got some questions?</h2>
-			<p>We already have some answers.</p>
-		</div>
-		<ul class="faq__content">
-			<li>
-				<button type="button" id="faqQuestion1" class="faq__question">What is WeHaveAll?</button>
-				<p id="faqAnswer1"  class="faq__answer hide">
-					WeHaveAll is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
-					<br>
-					<br>
-					You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
-				</p>
-			</li>
-			<li>
-				<button type="button" id="faqQuestion2" class="faq__question">How much does WeHaveAll cost?</button>
-				<p id="faqAnswer2"  class="faq__answer hide">
-					Watch WeHaveAll on your smartphone, tablet, smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from $4.99 to $9.99 a month. No extra costs, no contracts.
-				</p>
-			</li>
-			<li>
-				<button type="button" id="faqQuestion3" class="faq__question">Where can I watch?</button>
-				<p id="faqAnswer3"  class="faq__answer hide">
-					Watch anywhere, anytime. Sign in with your WeHaveAll account to watch instantly on the web from your personal computer or on any internet-connected device that offers the WeHaveAll app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
-					<br>
-					<br>
-					You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take WeHaveAll with you anywhere.
-				</p>
-			</li>
-			<li>
-				<button type="button" id="faqQuestion4" class="faq__question">How do I cancel?</button>
-				<p id="faqAnswer4"  class="faq__answer hide">
-					WeHaveAll is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
-				</p>
-			</li>
-			<li>
-				<button type="button" id="faqQuestion5" class="faq__question">What can I watch on WeHaveAll?</button>
-				<p id="faqAnswer5"  class="faq__answer hide">
-					WeHaveAll has an extensive library of feature films, documentaries, TV shows, anime, award-winning WeHaveAll originals, and more. Watch as much as you want, anytime you want.
-				</p>
-			</li>
-			<li>
-				<button type="button" id="faqQuestion6" class="faq__question">Is WeHaveAll good for kids?</button>
-				<p id="faqAnswer6" class="faq__answer hide">
-					The WeHaveAll Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
-					<br>
-					<br>
-					Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
-				</p>
-			</li>
-		</ul>
-	</section>
-	<footer>
-		<h2 class="footer__logo">WeHave<span>All</span></h2>
-		<p class="footer__description">Follow us on social media, and stay in touch with our community.</p>
-		<ul class="footer__socials">
-			<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 320 512"><path fill="#ffffff" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a></li>
-			<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 448 512"><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
-			<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 448 512"><path fill="#ffffff" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a></li>
-			<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 512 512"><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a></li>
-			<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 576 512"><path fill="#ffffff" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a></li>
-		</ul>
-		<p class="footer__copyright">© 2025 WeHaveAll. All rights reserved.</p>
-	</footer>
 </body>
 </html>
