@@ -8,7 +8,6 @@ const sidebarMenuIcon = document.getElementById("sidebarMenuIcon");
 const sidebarMenuFeaturesButton = document.getElementById("sidebarMenuFeaturesButton");
 const sidebarMenuPlansButton = document.getElementById("sidebarMenuPlansButton");
 const sidebarMenuReviewsButton = document.getElementById("sidebarMenuReviewsButton");
-const sidebarMenuContactButton = document.getElementById("sidebarMenuContactButton");
 const sidebarMenuFAQButton = document.getElementById("sidebarMenuFAQButton");
 const sidebarMenuClosingButton = document.getElementById("sidebarMenuClosingButton");
 
@@ -39,14 +38,14 @@ function closeSidebarMenu() {
 function faqQuestionClick(faqAnswer) {
 	if (faqAnswer.classList.contains("hide")) {
 		faqAnswer.classList.remove("hide");
-		const openAnswer = document.querySelectorAll("p.open");
+		const openAnswer = document.querySelectorAll("p.show");
 		openAnswer.forEach(answer => {
-			answer.classList.remove("open");
+			answer.classList.remove("show");
 			answer.classList.add("hide");
 		})
-		faqAnswer.classList.add("open");
-	} else if (faqAnswer.classList.contains("open")) {
-		faqAnswer.classList.remove("open");
+		faqAnswer.classList.add("show");
+	} else if (faqAnswer.classList.contains("show")) {
+		faqAnswer.classList.remove("show");
 		faqAnswer.classList.add("hide");
 	}
 }
@@ -75,10 +74,6 @@ sidebarMenuPlansButton.addEventListener("click", () => {
 })
 sidebarMenuReviewsButton.addEventListener("click", () => {
 	document.getElementById("reviewsSection").scrollIntoView({behavior: "smooth"});
-	closeSidebarMenu();
-})
-sidebarMenuContactButton.addEventListener("click", () => {
-	document.getElementById("contactSection").scrollIntoView({behavior: "smooth"});
 	closeSidebarMenu();
 })
 sidebarMenuFAQButton.addEventListener("click", () => {
