@@ -1,4 +1,59 @@
-/* Responsive Header and Sidebar Menu */
+/* ---------- Responsiveness ---------- */
+
+@media (max-width: 883px) {
+	h1 {
+		font-size: var(--h-font-size-large);
+	}
+	h2 {
+		font-size: var(--h-font-size-medium);
+	}
+	h3 {
+		font-size: var(--h-font-size-small);
+	}
+}
+
+@media (max-width: 630px) {
+	h1 {
+		font-size: var(--h-font-size-medium);
+	}
+	h2 {
+		font-size: var(--h-font-size-small);
+	}
+	h3, h4 {
+		font-size: 1.5rem;
+	}
+	.section__title p {
+		font-size: 1rem;
+	}
+	.faq__content {
+		padding: 0;
+	}
+}
+
+@media (max-width: 439px) {
+	.faq__question {
+		font-size: 1rem;
+	}
+	.faq__answer {
+		font-size: var(--p-font-size-small);
+	}
+	.footer__logo {
+		font-size: var(--h-font-size-medium);
+	}
+	.footer__socials svg {
+		height: 32px;
+		width: 32px;
+	}
+}
+
+@media (max-width: 397px) {
+	.home__description {
+		font-size: 1rem;
+	}
+}
+
+/* ---------- Header and Sidebar Menu ---------- */
+
 @media (max-width: 1379px) {
 	header li:nth-child(5) {
 		display: none;
@@ -26,5 +81,38 @@
 @media (max-width: 499px) {
 	.sidebar-menu {
 		width: 100%;
+	}
+}
+
+/* ---------- Hover Animations ---------- */
+
+@media (hover:hover) {
+	.text-hover:hover {
+		color: var(--accent-color);
+		transition: color .5s ease;
+	}
+	.button-hover:hover {
+		background: var(--accent-color);
+		transition: background .5s ease;
+	}
+	.home__button:hover, .pricing__card-button:hover {
+		background: var(--accent-color);
+		color: var(--primary-color);
+		transition: all 1s ease;
+	}
+}
+
+/* ---------- Click Animations ---------- */
+
+@media (hover:none) {
+	.text-hover:active {
+		color: var(--accent-color);
+	}
+	.button-hover:active {
+		background: var(--accent-color);
+	}
+	.home__button:active, .pricing__card-button:active {
+		background: var(--accent-color);
+		color: var(--primary-color);
 	}
 }
